@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chilanka&family=Fresca&family=Lato&family=Merriweather&family=Open+Sans:ital@0;1&family=Shadows+Into+Light&family=Ubuntu:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    /* outline: 0;
+    transition: all 0.5% ease */
+}
+
+/*============================================================*/
+/*                      SLIDER IQYURIUYIE                     */
+/*============================================================*/
+
+section
+{
+    position:  relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo
+{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+}
+
+header ul li
+{
+    list-style: none;
+}
+
+header ul li a
+{
+    display: inline-block;
+    color:  #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.menu
+{
+    background: #f5f5f57a;
+    margin-bottom: 15px;
+}
+
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox
+{
+    position: relative;
+    max-width: 800px;
+}
+
+.content .textBox h2
+{
+    color: #333;
+    font-size: 3em;    
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+.content .textBox h2 span
+{
+    color: #ac7d26;
+    font-size: 1.2em;    
+    font-weight: 900;
+}
+
+.content .textBox P 
+{
+    color: #333;
+}
+
+.content .textBox a 
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding:  8px 20px;
+    background: #ac7d26;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox
+{
+    width:  800px;
+    display:  flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img
+{
+    max-width: 500px;
+}
+
+.kenma
+{
+    width: 800px;
+    height: 800px;
+}
+
+.thumb
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li
+{
+    list-style: none;
+    display:  inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.2px;
+}
+.thumb li:hover
+{
+    transform: translateY(-12px)        /*HACE PARA ARIIBA LOS PUNTOS*/
+}
+
+.thumb li img
+{
+    max-width: 60px;
+}
+
+.circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c9c9c9;    
+    clip-path: circle(600px at right 800px);
+}
+
+
+
+
+/*============================================================*/
+/*                     CALCULADORA KHSFJK                     */
+/*============================================================*/
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calculadora {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+}
+
+.tema-mostrar {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.tema-mostrar.activo {
+    color: #333;
+}
+
+.tema-mostrar.activo::before {
+    background-color: #fff;
+}
+
+.tema-mostrar::before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+}
+
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#igual {
+    height: 130px;
+}
+
+/* light theme */
+
+.calculadora {
+    background-color: #fff;
+}
+
+.calculadora #display {
+    color: #0a1e23;
+}
+
+.calculadora button#clear {
+    background-color: #fcb3b8;
+    color: #fc4552;
+}
+
+.calculadora button.btn-num {
+    background-color: #c3eaff;
+    color: #000000;
+}
+
+.calculadora button.btn-operador {
+    background-color: #dcc2ff;
+    color: #b767f9;
+  }
+  
+  .calculadora button.btn-igual {
+    background-color: #bdfacc;
+    color: #000;
+  }
+
+  /* oscura theme */
+
+  .calculadora.oscura {
+    background-color: #071115;
+  }
+
+  .calculadora.oscura #display {
+    color: #f8fafb;
+  }
+
+  .calculadora.oscura button#clear {
+    background-color: #2d191e;
+    color: #bd3740;
+  }
+
+  .calculadora.oscura button.btn-num {
+    background-color: #1b2f38;
+    color: #f8fafb;
+  }
+
+  .calculadora.oscura button.btn-operador {
+    background-color: #2e1f39;
+    color: #aa00a4;
+  }
+  
+  .calculadora.oscura button.btn-igual {
+    background-color: #223323;
+    color: #ffffff;
+  }
+

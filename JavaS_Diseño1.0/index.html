@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Me!</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header class="menu">
+            <a href="#"><img src="IMAGES/furudate.png" class="logo"></a>
+            <ul>
+                <li><a href="HTML/botonesBipolares.html">Botones cambiantes</a></li>
+                <li><a href="index.html">Slider</a></li>
+                <li><a href="HTML/Calculadora.html">Calculadora</a></li>
+            </ul>
+        </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>No es solo un jugador<br>Es el<span> PROTAGONISTA</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Officia molestias incidunt id mollitia eos eaque provident 
+                        nisi repellendus non nihil. Tempore nihil excepturi aut, 
+                        dolorum molestiae eaque natus. Odit, atque.</p>
+                        <!-- <a href="#"> Ver mas</a> -->
+                    </div>
+                    <div class="imgBox">
+                        <img src="IMAGES/bokutoforte.png" class="starmotitas">
+                    </div>      
+            </div>   
+            <ul class="thumb">
+                <li><img src="IMAGES/bokuto_bt.png" alt="Boton de bokuto" onclick="imgSlider('../IMAGES/bokutoforte.png');changeCircleColor('#c9c9c9')"></li>
+                <li><img src="IMAGES/hinata_bt.png" alt="Boton de hinata" onclick="imgSlider('../IMAGES/hinata_sl.png');changeCircleColor('#fc8c60')"></li>
+                <li><img src="IMAGES/kenma_bt2.png" alt="Boton de kenma" onclick="imgSlider('../IMAGES/kenma_sl3.png');changeCircleColor('#ea4b5c')"></li>
+            </ul>  
+            
+    </section>
+</body>
+</html>
+<script src="JS/script.js"></script>
